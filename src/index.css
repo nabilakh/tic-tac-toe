@@ -20,10 +20,10 @@ html {
 body {
   background: radial-gradient(
       circle at top,
-      rgba(241, 210, 70, 0.98),
-      rgba(250, 176, 103, 0.87)
+      rgba(70, 158, 241, 0.98),
+      rgba(103, 176, 250, 0.87)
     ),
-    url("bg-pattern-dark.png");
+    url("/bg-pattern-dark.png");
   background-repeat: repeat;
   background-size: 100% 100%, 30% 30%, 100% 100%;
   min-height: 110rem;
@@ -44,7 +44,7 @@ h1 {
   font-family: "Caprasimo", cursive;
   font-size: 3rem;
   margin: 0 auto 3rem auto;
-  color: #3f3b00;
+  color: #00273f;
 }
 
 #game-container {

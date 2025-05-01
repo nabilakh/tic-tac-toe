@@ -52,7 +52,7 @@ h1 {
   margin: 3rem auto;
   padding: 2rem;
   border-radius: 6px;
-  background: linear-gradient(#383624, #282617);
+  background: linear-gradient(rgba(34, 71, 104, 0.98), rgba(29, 61, 88, 0.98));
   box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
   position: relative;
 }
@@ -75,20 +75,20 @@ h1 {
 }
 
 #players.highlight-player li.active {
-  border-color: #f6e35a;
+  border-color: rgba(164, 211, 255, 0.98);
   animation: pulse 2s infinite ease-in-out;
 }
 
 #players.highlight-player li.active .player-name,
 #players.highlight-player li.active .player-symbol {
-  color: #f6e35a;
+  color: rgba(118, 189, 255, 0.98);
 }
 
 #players button {
   width: 3rem;
   border: none;
   background: none;
-  color: #c3ba78;
+  color: rgba(164, 211, 255, 0.98);
   font-size: 0.9rem;
   cursor: pointer;
   transition: color 0.2s;
@@ -97,12 +97,12 @@ h1 {
 }
 
 #players button:hover {
-  color: #f8ca31;
+  color: rgba(0, 90, 174, 0.98);
 }
 
 .player {
   border: 2px solid transparent;
-  padding: 0.5rem;
+  padding: 3px 12px 0 0;
   border-radius: 4px;
   font-weight: bold;
 }
@@ -111,7 +111,7 @@ h1 {
   display: inline-block;
   width: 10rem;
   font-size: 1rem;
-  color: #e1dec7;
+  color: rgba(188, 223, 255, 0.98);
   text-transform: uppercase;
   margin: 0;
   padding: 0.5rem;
@@ -127,7 +127,7 @@ h1 {
   border: none;
   padding: 0.5rem;
   animation: pulse-text 2s infinite;
-  background-color: #46432f;
+  background-color: rgba(46, 78, 108, 0.98);
   text-align: center;
   text-transform: uppercase;
 }
@@ -135,7 +135,7 @@ h1 {
 .player-symbol {
   margin-left: 1rem;
   font-size: 1rem;
-  color: #e1dec7;
+  color: rgba(178, 216, 252, 0.98);
 }
 
 ol {
@@ -182,8 +182,8 @@ ol {
   width: 8rem;
   height: 8rem;
   border: none;
-  background: #aca788;
-  color: #3f3b00;
+  color: rgba(58, 96, 131, 0.98);
+  background: rgba(171, 208, 241, 0.98);
   font-size: 5rem;
   cursor: pointer;
   font-family: "Caprasimo", cursive;
@@ -200,7 +200,7 @@ ol {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: rgba(40, 38, 23, 0.95);
+  background-color: rgba(23, 32, 40, 0.95);
   animation: pop-in 0.5s cubic-bezier(0.68, -0.55, 0.65, 0.52) forwards;
 }
 
@@ -208,14 +208,14 @@ ol {
   font-family: "Caprasimo", cursive;
   font-size: 4rem;
   text-align: center;
-  color: #fcd256;
+  color: rgba(25, 118, 205, 0.98);
   margin: 0;
 }
 
 #game-over p {
   font-size: 2rem;
   text-align: center;
-  color: #e1dec7;
+  color: rgba(165, 211, 255, 0.98);
 }
 
 #game-over button {
@@ -223,25 +223,25 @@ ol {
   margin: 0 auto;
   font-size: 1.5rem;
   background: none;
-  border: 2px solid #fcd256;
-  color: #fcd256;
+  border: 2px solid rgba(164, 211, 255, 0.98);
+  color: rgba(98, 179, 255, 0.98);
   padding: 0.5rem 1rem;
   border-radius: 4px;
   cursor: pointer;
   transition: all 0.2s, color 0.2s;
-  box-shadow: 0 0 8px rgba(255, 187, 0, 0.4);
+  box-shadow: 0 0 8px rgba(111, 186, 255, 0.98);
 }
 
 #game-over button:hover {
-  background: #fcd256;
-  color: #3f3b00;
+  background: rgba(51, 156, 255, 0.98);
+  color: rgba(7, 61, 112, 0.98);
   transform: scale(1.1);
-  box-shadow: 0 0 20px rgba(255, 187, 0, 0.8);
+  box-shadow: 0 0 20px rgba(111, 186, 255, 0.98);
 }
 
 #log {
   max-width: 20rem;
-  color: #3f3b00;
+  color: rgba(7, 61, 112, 0.98);
   list-style: none;
   margin: 2rem auto;
   padding: 0;
@@ -298,13 +298,13 @@ ol {
 
 @keyframes pulse-text {
   0% {
-    color: #e1dec7;
+    color: rgba(56, 103, 144, 0.98);
   }
   50% {
-    color: #9f9d83;
+    color: rgba(219, 236, 251, 0.98);
   }
   100% {
-    color: #e1dec7;
+    color: rgba(219, 236, 251, 0.98);
   }
 }
 
@@ -322,15 +322,15 @@ ol {
 
 @keyframes pulse {
   0% {
-    border-color: #f6e35a;
-    box-shadow: 0 0 0 0 rgba(246, 227, 90, 0.4);
+    border-color: rgba(219, 236, 251, 0.98);
+    box-shadow: 0 0 0 0 rgba(164, 211, 255, 0.98);
   }
   50% {
-    border-color: #f8c031;
+    border-color: rgba(219, 236, 251, 0.98);
     box-shadow: 0 0 0 0.5rem rgba(248, 165, 49, 0);
   }
   100% {
-    border-color: #f6e35a;
+    border-color: rgba(219, 236, 251, 0.98);
     box-shadow: 0 0 0 0 rgba(246, 227, 90, 0);
   }
 }
